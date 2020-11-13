@@ -1,20 +1,47 @@
-// p_record2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include<stdio.h>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //Inputs
+    char name[80];
+    printf("%s", "Enter name (string) \n");
+    scanf_s(" %[^\n]79s", name, 80);
+
+    int age;
+    printf("%s", "Enter age (int) \n");
+    scanf_s(" %i", &age);
+
+    char gender;
+    printf("%s", "Enter gender (char) m or f \n");
+    scanf_s(" %c", &gender, 1);
+
+    char address[80];
+    printf("%s", "Enter address (string) \n");
+    scanf_s(" %[^\n]79s", address, 80);
+
+    int married;
+    printf("%s", "Enter married (bool), 0 as false and 1 as true \n");
+    scanf_s(" %i", &married);
+    bool am_married;
+    if (married == 0) {
+        am_married = false;
+    }
+    else {
+        am_married = true;
+    }
+
+    float height;
+    printf("%s", "Enter height in meters (float) \n");
+    scanf_s(" %f", &height);
+
+    //Printouts
+    printf("%s%s\n", "Name: ", name);
+    printf("%s%i\n", "Age: ",  age);
+    printf("%s%c\n", "Gender: ", gender);
+    printf("%s%s\n", "Address: ", address);
+    printf("%s%s\n", "Married: ", am_married ? "true" : "false");
+    printf("%s%f%s", "Height: ", height, " meters");
+  
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

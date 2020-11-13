@@ -1,32 +1,43 @@
 #include <iostream>
+#include <string>
 using namespace std;
-
 
 int main()
 {
+    //Inputs 
     string name;
     cout << "Enter name (string)" << endl;
-    cin >> name;
+    getline(cin, name);
 
     int age;
     cout << "Enter age (int)" << endl;
     cin >> age;
 
     char gender;
-    cout << "Enter gender (char)" << endl;
+    cout << "Enter gender (char) m or f" << endl;
     cin >> gender;
+    cin.ignore(1, '\n');
 
     string address;
     cout << "Enter address (string)" << endl;
-    cin >> address;
+    getline(cin, address);
 
     bool married;
-    cout << "Enter married (bool)" << endl;
+    cout << "Enter married (bool), 0 as false and 1 as true" << endl;
     cin >> married;
+    cin.ignore(1, '\n');
 
-    double height;
-    cout << "Enter height (double)" << endl;
+    float height;
+    cout << "Enter height in meters (float)" << endl;
     cin >> height;
 
-    cout << name << age << gender << address << married << height;
+    //Printouts
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+    cout << "Gender: " << gender << endl;
+    cout << "Address: " << address << endl;
+    cout << "Married: "  << boolalpha << married << endl;
+    cout << "Height: " << height << " meters";
+
+    return 0;
 }

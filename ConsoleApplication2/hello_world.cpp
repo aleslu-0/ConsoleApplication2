@@ -3,9 +3,11 @@ using namespace std;
 
 int main()
 {
+    //print Hello World
     string t = "Hello world!\n";
     cout << t;
 
+    //For loop
     int x;
     cout << "Enter number (for loop)" << endl;
     cin >> x;
@@ -13,6 +15,7 @@ int main()
         cout << "Hello world!" << endl;
     }
 
+    //While loop
     cout << "Enter number (while loop)" << endl;
     cin >> x;
     int y = 0;
@@ -22,6 +25,7 @@ int main()
     }
     int z = 0;
 
+    //Do... while loop
     cout << "Enter number (do...while loop)" << endl;
     cin >> x;
     do {
