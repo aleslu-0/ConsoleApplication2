@@ -30,7 +30,7 @@ int main()
     else {
         am_married = true;
     }
-
+    
     float height;
     printf("%s", "Enter height in meters (float) \n");
     scanf_s(" %f", &height);

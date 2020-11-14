@@ -1,0 +1,8 @@
+1. I have some experience with C#, so the way to write some code, such as loops, wasn't new. However, inputs, outputs, ascii characters and debugging was pretty new to me.
+
+2. I found the correct way to make scanf_s work difficult at first. Ignoring new lines in the person record was hard to grasp too. I spent a lot of time googling and checking out the module pdfs on zoom to solve this. Also checked in with fellow classmates.
+
+3. The wording on task 6 Prime Numbers was a little hard to understand. More information regarding scanf_s would have helped.
+
+
+I probably spent around ~8 hours total on this lab.
